@@ -21,7 +21,7 @@ public class AuthenticationFilter implements HandlerInterceptor {
     public UserRepository userRepository;
     @Autowired
     public AuthenticationController authenticationController;
-    private static final List<String> whitelist = Arrays.asList("/login", "/register","/logout", "/css");
+    private static final List<String> whitelist = Arrays.asList("/login", "/register","/logout", "/css", "/js");
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
